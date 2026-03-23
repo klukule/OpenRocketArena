@@ -97,14 +97,37 @@ optional, uncomment to enable voice chat - by default game will try to use origi
 
 > **Note:** Vivox requires a registered Vivox/Unity account. Both the backend (`appsettings.json`) and client (`Overrides.ini`) must have matching issuer and domain values. The backend also needs the `Vivox:TokenKey` for signing tokens.
 
+### Steam API Keys
+
+You need a Steam Web API key. There are two types:
+
+- **Publisher key** (recommended) - Available from [Steamworks Partner site](https://partner.steamgames.com/) under Users & Permissions > Manage Groups > select group > Web API. Requires being a Steamworks partner. Uses `partner.steam-api.com`.
+- **Public key** - Available from [Steam Web API Key page](https://steamcommunity.com/dev/apikey). Anyone with a Steam account can get one. Uses `api.steampowered.com`.
+
+Both work, but the publisher key has higher rate limits and access to additional endpoints.
+
+> **Do not share your API key.** It is a secret. Do not commit it to git, post it publicly, or include it in shared builds. The `customize.ps1` script writes it only to local config files.
+
 ## Install
 
 1. Download the latest release or build with `build.bat`
-2. Update `Steam:ApiKey` in `Backend/appsettings.json`
-3. Update `Matchmaking:ServerCommand` to point to `Mariner.exe` in your game folder
-4. Copy everything to your game folder (replacing `Mariner.exe` and `Launch_RocketArena.exe`)
-5. Start `LaunchBackend.bat`
-6. Launch the game (Steam, `Mariner.exe`, `Launch_RocketArena.exe`, or `LaunchClient.bat`)
+2. Run `customize.ps1` to configure your installation (Steam API key, Vivox, server settings, etc.)
+3. Copy the `Output/` folder contents to your game folder (replacing `Mariner.exe` and `Launch_RocketArena.exe`)
+4. Start `LaunchBackend.bat`
+5. Launch the game (Steam, `Mariner.exe`, `Launch_RocketArena.exe`, or `LaunchClient.bat`)
+
+### Configuration Script
+
+After building, run `customize.ps1`. It will walk you through:
+
+1. **Steam API Key** (required) - type and key value
+2. **Steam App ID** - override or use default (1233550)
+3. **Vivox Voice Chat** - enable/disable and set credentials
+4. **Backend URL** - custom hostname, port, and HTTP/HTTPS for online play
+5. **Game Server IP** - for exposing game servers to the internet
+6. **Server Executable** - path to `Mariner.exe` for matchmaking
+
+The script updates both `Overrides.ini` and `Backend/appsettings.json` in the `Output/` folder. You can also edit these files manually.
 
 ## Building
 
