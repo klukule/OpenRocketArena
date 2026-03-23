@@ -1,0 +1,3613 @@
+{
+  "botlevelspve": [
+    { "bot_level": "2" },
+    { "bot_level": "2" },
+    { "bot_level": "2" },
+    { "bot_level": "2" }
+  ],
+  "botlevelspvp": [
+    { "bot_level": "3", "skill_min": 35 },
+    { "bot_level": "2", "skill_min": 25 },
+    { "bot_level": "0", "skill_min": 0 },
+    { "bot_level": "1", "skill_min": 10 }
+  ],
+  "config": [
+    {
+      "crossplay_kill_switch": false,
+      "games_required_for_ranked_play": 15,
+      "games_required_for_social_play": 5,
+      "number_of_placement_matches": 10
+    }
+  ],
+  "defaults": [
+    {
+      "lobby_map_mode": {
+        "map": "b77c4e09-f082-4953-842c-6fc727d325fd",
+        "mode": "92e00f85-de25-4cce-902c-6faaf5c9ec58"
+      },
+      "private_match_map_mode": {
+        "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+        "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+      }
+    }
+  ],
+  "map": [
+    {
+      "description": "Explore the Gemstone Jungle",
+      "engine_asset_id": "/Game/Maps/A2/A2V1/a2v1_main",
+      "image_lookup_id": "PreviewA2V1",
+      "name": "Temples of Jaaqua",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff"
+    },
+    {
+      "description": "Dive to The Crystal Reef",
+      "engine_asset_id": "/Game/Maps/A5/A5V1/a5v1_main",
+      "image_lookup_id": "PreviewA5V1",
+      "name": "The Shimmering Depths",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "11230daf-f6c5-4018-bff5-ae9245da8fbd"
+    },
+    {
+      "description": "The Heart of the Wilds",
+      "engine_asset_id": "/Game/Maps/A4/A4V1/A4V1_main",
+      "image_lookup_id": "PreviewA4V1",
+      "name": "Stompy's Refuge",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "17434fe1-ebbc-414e-9582-71dee166620e"
+    },
+    {
+      "description": "Sandbox Blasting Range",
+      "engine_asset_id": "/Game/Maps/Sandbox/Sandbox_Main",
+      "image_lookup_id": "PreviewSandbox",
+      "name": "Sandbox",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "1dc8b18b-3848-40ee-b5f9-42dc33960e1e"
+    },
+    {
+      "description": "A snowy refuge in Serrata Peaks",
+      "engine_asset_id": "/Game/Maps/A6/A6V1/a6v1_main",
+      "image_lookup_id": "PreviewA6V1",
+      "name": "Icefall Keep",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "1f2bba27-97f1-4023-afe5-3a9f814c6446"
+    },
+    {
+      "description": "Realm of mystery and magic, Conjura",
+      "engine_asset_id": "/Game/Maps/A8/A8V1/A8V1_Conjura_Main",
+      "image_lookup_id": "PreviewA8V1",
+      "name": "Conjura",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "2e0d0a5b-db28-4ca2-a3d5-992c05336193"
+    },
+    {
+      "description": "The ghosts of the Jaaqua haunt The Ruined City",
+      "engine_asset_id": "/Game/Maps/A2/A2V2/A2V2_Main",
+      "image_lookup_id": "PreviewA2V2",
+      "name": "Ruined City",
+      "recommended_num_players": "TwoVsTwo",
+      "unique_id": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8"
+    },
+    {
+      "description": "The hidden cove of Crater's Edge",
+      "engine_asset_id": "/Game/Maps/A3/A3V3/a3v3_main",
+      "image_lookup_id": "PreviewA3V3",
+      "name": "Lagoon of Doom",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "41901180-e601-48e4-a1be-89f978f70d5b"
+    },
+    {
+      "description": "Boom City's Practice Arena",
+      "engine_asset_id": "/Game/Maps/Onboarding/Onboarding_Main",
+      "image_lookup_id": "PreviewOnboarding",
+      "name": "Tour Proving Grounds",
+      "recommended_num_players": "TwoVsTwo",
+      "unique_id": "4f01b3e8-4422-46b7-b8e7-ab877a644114"
+    },
+    {
+      "description": "The wildest place in the Wilds, Kayo Kanyon",
+      "engine_asset_id": "/Game/Maps/A4/A4V3_TarPit/A4V3_TarPit_Main",
+      "image_lookup_id": "PreviewA4V3",
+      "name": "Kayo Kanyon",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "56fcfbec-7e00-41fc-8765-45f651d2d841"
+    },
+    {
+      "description": "Defending Fort Rocket",
+      "engine_asset_id": "/Game/Maps/A7/A7V1/a7v1_main",
+      "image_lookup_id": "PreviewA7V1",
+      "name": "The Golden Zephyr",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "62accb32-17e4-4d05-983f-0cb0da7a4174"
+    },
+    {
+      "description": "Jayto's Boom City home",
+      "engine_asset_id": "/Game/Maps/A1/A1V4/A1V4_main",
+      "image_lookup_id": "PreviewA1V4",
+      "name": "Apogee Acres",
+      "recommended_num_players": "TwoVsTwo",
+      "unique_id": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332"
+    },
+    {
+      "description": "Kayi's Royal Palace stands guard over The Forever Tree in Serrata Peaks",
+      "engine_asset_id": "/Game/Maps/A6/A6V2/A6V2_Main",
+      "image_lookup_id": "PreviewA6V2",
+      "name": "Frostwind Grove",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "7373f2e8-7194-4276-a401-6805536e0380"
+    },
+    {
+      "description": "Behold the beauty of The Star of Crater",
+      "engine_asset_id": "/Game/Maps/A5/A5V2/a5v2_main",
+      "image_lookup_id": "PreviewA5V2",
+      "name": "The Star of Crater",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "945d2128-c74a-4c45-9bf3-d462e4020bb7"
+    },
+    {
+      "description": "All aboard to Crater's most remote stop",
+      "engine_asset_id": "/Game/Maps/A4/A4V2/A4V2_Main",
+      "image_lookup_id": "PreviewA4V2",
+      "name": "Megadon Junction",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "a82526cb-6d9b-457d-9b57-d440cc912393"
+    },
+    {
+      "description": "Lift off to the top of Crater",
+      "engine_asset_id": "/Game/Maps/A1/A1V3/a1v3_main",
+      "image_lookup_id": "PreviewA1V3",
+      "name": "Hypersonic Heights",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316"
+    },
+    {
+      "description": "LAN Lobby Map Description",
+      "engine_asset_id": "/Game/Maps/LobbyMap",
+      "image_lookup_id": "LobbyMap",
+      "name": "LAN Lobby Map",
+      "recommended_num_players": "ThreeVsThree",
+      "unique_id": "b77c4e09-f082-4953-842c-6fc727d325fd"
+    },
+    {
+      "description": "Set a course for Crater's Edge",
+      "engine_asset_id": "/Game/Maps/A3/A3V1/a3v1_main",
+      "image_lookup_id": "PreviewA3V1",
+      "name": "Grand Harbor",
+      "recommended_num_players": "TwoVsTwo",
+      "unique_id": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f"
+    }
+  ],
+  "mode": [
+    {
+      "description": "Knockout vs. AI Bots with character stacking",
+      "engine_asset_id": "GM_TDM_vsAI_PvE",
+      "image_lookup_id": "",
+      "name": "Bot Knockout",
+      "unique_id": "01945f28-2295-4c14-bc62-6446365836f2",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Score the Rocketball 5 Times to Win",
+      "engine_asset_id": "GM_Rocketball_SameCharacter_Flux",
+      "image_lookup_id": "",
+      "name": "Flux Rocketball",
+      "unique_id": "060cb0d2-230b-4669-8b3d-cbab80af203e",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Onboarding",
+      "engine_asset_id": "GM_Trials_Onboarding",
+      "image_lookup_id": "",
+      "name": "Onboarding",
+      "unique_id": "0fe68299-7c8f-45ba-a941-2c4e69ef9356",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Capture Mega Rockets while taking more impulse and less damage",
+      "engine_asset_id": "GM_MegaRocket_HighImpulse",
+      "image_lookup_id": "",
+      "name": "Mega Rocket Mayhem",
+      "unique_id": "131193c2-aca3-4c0d-9e54-55de9addf6e8",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "All Gant Hero Form Knockout",
+      "engine_asset_id": "GM_TDM_GantHeroOnly",
+      "image_lookup_id": "",
+      "name": "Gryphons Only",
+      "unique_id": "16951fa8-59ff-4407-92c9-1224bd2dcc23",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "KO opponents to win",
+      "engine_asset_id": "GM_TDM_SameCharacter_Flux",
+      "image_lookup_id": "",
+      "name": "Flux Knockout",
+      "unique_id": "2211d38d-d1ce-478f-8995-696d76ea8e32",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Practice Description",
+      "engine_asset_id": "GM_Trials_TargetPractice",
+      "image_lookup_id": "",
+      "name": "Practice",
+      "unique_id": "24d4ed29-7a50-4e10-a868-fd2cdd6cbe3c",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Knockout your opponents with reduced cooldowns",
+      "engine_asset_id": "GM_TDM_LowCooldowns",
+      "image_lookup_id": "",
+      "name": "Turbo Knockout",
+      "unique_id": "2b00864e-e391-4ae5-a37d-182bc9dab4ce",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "KO opponents to win",
+      "engine_asset_id": "GM_TDM_2v2",
+      "image_lookup_id": "",
+      "name": "2v2 Knockout",
+      "unique_id": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Score the Rocketball 5 Times to Win",
+      "engine_asset_id": "GM_Rocketball",
+      "image_lookup_id": "",
+      "name": "Rocketball",
+      "unique_id": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Throw, score, or get rid of the Blast Ball before it explodes!",
+      "engine_asset_id": "GM_Rocketball_Blastball",
+      "image_lookup_id": "",
+      "name": "Blast Ball",
+      "unique_id": "2e056246-cb80-4016-adf8-c26cc19c5c4b",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Collect the most coins to win",
+      "engine_asset_id": "GM_TreasureHunt_SameCharacter_Flux",
+      "image_lookup_id": "",
+      "name": "Flux Treasure Hunt",
+      "unique_id": "3256ee8a-e36e-4269-95fe-ec8259008151",
+      "xp_bonus_goal": "coins"
+    },
+    {
+      "description": "Hold the Treasure Chest and collect the most Coins to win",
+      "engine_asset_id": "GM_TreasureHunt_SameCharacter_Slider",
+      "image_lookup_id": "",
+      "name": "Kayi Treasure Hunt",
+      "unique_id": "329a56f9-d19f-4629-ac96-ac1b8c12e83a",
+      "xp_bonus_goal": "coins"
+    },
+    {
+      "description": "Capture 5 Mega Rockets to Win",
+      "engine_asset_id": "GM_MegaRocket_SameCharacter_Dash",
+      "image_lookup_id": "",
+      "name": "Plink Mega Rocket",
+      "unique_id": "32fb63c0-eda9-421f-9f59-2dd30a0869e6",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "KO opponents to score. The team with the most points wins.",
+      "engine_asset_id": "GM_TDM_SameCharacter_Slider",
+      "image_lookup_id": "",
+      "name": "Kayi Knockout",
+      "unique_id": "34067c21-8f3a-4876-a62d-44f54fd6641e",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Knockout your opponents as Boone",
+      "engine_asset_id": "GM_TDM_SnipersOnly",
+      "image_lookup_id": "",
+      "name": "MegaMuzzle",
+      "unique_id": "3924859e-aa56-4845-915a-cd0d9f73cd64",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Score the Rocketball 5 Times to Win",
+      "engine_asset_id": "GM_Rocketball_SameCharacter_Slider",
+      "image_lookup_id": "",
+      "name": "Kayi Rocketball",
+      "unique_id": "41466308-b284-4e30-b641-2fd5afc42e1e",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "KO opponents to win",
+      "engine_asset_id": "GM_TDM_SameCharacter_Dash",
+      "image_lookup_id": "",
+      "name": "Plink Knockout",
+      "unique_id": "4366504e-a203-402a-a806-6c54cf03dc63",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "All Rev Knockout with reduced Special cooldown and increased speed",
+      "engine_asset_id": "GM_TDM_Joust",
+      "image_lookup_id": "",
+      "name": "Joust",
+      "unique_id": "48aafa2d-7eef-4f60-8f48-9388fbf736a1",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Score the Rocketball 5 Times to Win",
+      "engine_asset_id": "GM_Rocketball_SameCharacter_Dash",
+      "image_lookup_id": "",
+      "name": "Plink Rocketball",
+      "unique_id": "4a51c241-ab38-4fce-9992-bb43f92fc4aa",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Capture 5 Mega Rockets to Win",
+      "engine_asset_id": "GM_MegaRocket_SameCharacter_Slider",
+      "image_lookup_id": "",
+      "name": "Kayi Mega Rocket",
+      "unique_id": "5760afb5-16ac-4805-acfc-d1eb478734c1",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "Capture 5 Mega Rockets to Win",
+      "engine_asset_id": "GM_MegaRocket",
+      "image_lookup_id": "",
+      "name": "Mega Rocket",
+      "unique_id": "5a4d875a-1333-44cf-b123-153dbd0ce0e2",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "Duel your Opponent! The first to 5 KOs wins.",
+      "engine_asset_id": "GM_Duel_Snow",
+      "image_lookup_id": "",
+      "name": "Duel - snow",
+      "unique_id": "603793f4-0067-4cd8-a43f-6f3dd256bee4",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Throw Snowballs and knockout your opponents",
+      "engine_asset_id": "GM_TDM_SnowballFight",
+      "image_lookup_id": "",
+      "name": "Snowball Fight",
+      "unique_id": "603ce0f7-22a1-4a47-949b-c96341fd28c1",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Duel your Opponent! The first to 5 KOs wins.",
+      "engine_asset_id": "GM_Duel",
+      "image_lookup_id": "",
+      "name": "Duel",
+      "unique_id": "6278f329-7ecb-43a8-ae75-32526fde05f2",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Players take greatly increased damage!  Knockout opponents to win.",
+      "engine_asset_id": "GM_TDM_Splat",
+      "image_lookup_id": "",
+      "name": "Splat",
+      "unique_id": "6464ffc5-d91a-45ff-b107-427c6b963803",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Knockout your opponents as a random Competitor",
+      "engine_asset_id": "GM_TDM_AllRandom",
+      "image_lookup_id": "",
+      "name": "Random Rocket",
+      "unique_id": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Capture 5 Mega Rockets to Win",
+      "engine_asset_id": "GM_MegaRocket_SameCharacter_Flux",
+      "image_lookup_id": "",
+      "name": "Flux Mega Rocket",
+      "unique_id": "718ff528-9c1e-418d-8e64-09f81b239af1",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "Throw or Carry the Beach Ball into the Opponent's Goal to Score",
+      "engine_asset_id": "GM_Rocketball_Beachball",
+      "image_lookup_id": "",
+      "name": "Beach Ball",
+      "unique_id": "848f32b0-f420-447e-b9b4-8c0c946c456a",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Cooperatively battle a horde of RocketBots",
+      "engine_asset_id": "GM_RocketbotAttack",
+      "image_lookup_id": "",
+      "name": "RocketBot Attack",
+      "unique_id": "86a17390-de0d-49ad-8b7c-972e674e3964",
+      "xp_bonus_goal": "badgesremaining"
+    },
+    {
+      "description": "Treasure Hunt vs. AI Bots with character stacking",
+      "engine_asset_id": "GM_TreasureHunt_vsAI_PvE",
+      "image_lookup_id": "",
+      "name": "Bot Treasure Hunt",
+      "unique_id": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3",
+      "xp_bonus_goal": "coins"
+    },
+    {
+      "description": "Mega Rocket vs. AI Bots with character stacking",
+      "engine_asset_id": "GM_MegaRocket_vsAI_PvE",
+      "image_lookup_id": "",
+      "name": "Bot Mega Rocket",
+      "unique_id": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "The LAN Lobby Game Mode",
+      "engine_asset_id": "GM_Lobby",
+      "image_lookup_id": "",
+      "name": "LAN Lobby",
+      "unique_id": "92e00f85-de25-4cce-902c-6faaf5c9ec58",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Knockout your opponents as a random Competitor with reduced cooldowns",
+      "engine_asset_id": "GM_TDM_LowCooldowns_AllRandom",
+      "image_lookup_id": "",
+      "name": "Turbo Random Rocket",
+      "unique_id": "b207253d-2c5f-4613-b701-ae2a7516401e",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "KO opponents to win",
+      "engine_asset_id": "GM_TDM",
+      "image_lookup_id": "",
+      "name": "Knockout",
+      "unique_id": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "KO opponents to score. The team with the most points wins.",
+      "engine_asset_id": "GM_TDM_vsAI",
+      "image_lookup_id": "",
+      "name": "KNOCKOUT",
+      "unique_id": "b55e7e1f-790d-42ab-b645-a638473b9d2d",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Knockout Opponents as Kayi",
+      "engine_asset_id": "GM_TDM_IcyMirror",
+      "image_lookup_id": "",
+      "name": "Icy Mirror",
+      "unique_id": "b6f906f8-765d-4175-8f9a-6056f166b0c1",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Collect the most coins to win",
+      "engine_asset_id": "GM_TreasureHunt",
+      "image_lookup_id": "",
+      "name": "Treasure Hunt",
+      "unique_id": "b7a6466b-de48-47e6-9cb5-5f10127ecac1",
+      "xp_bonus_goal": "coins"
+    },
+    {
+      "description": "Capture 5 Mega Rockets to Win",
+      "engine_asset_id": "GM_MegaRocket_vsAI",
+      "image_lookup_id": "",
+      "name": "MEGA ROCKET",
+      "unique_id": "be35183d-35df-4a50-8cd8-fa20f891a2c2",
+      "xp_bonus_goal": "captures"
+    },
+    {
+      "description": "Score the Rocketball 5 Times to Win",
+      "engine_asset_id": "GM_Rocketball_vsAI",
+      "image_lookup_id": "",
+      "name": "ROCKETBALL",
+      "unique_id": "c11d9230-c3a6-437e-b5c4-c8a507b9e0cb",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Target Practice Description",
+      "engine_asset_id": "GM_Trials_Tutorial",
+      "image_lookup_id": "",
+      "name": "Target Practice",
+      "unique_id": "c1379b0c-5649-46f1-b4da-9a5fc16cce17",
+      "xp_bonus_goal": "knockouts"
+    },
+    {
+      "description": "Hold the Treasure Chest and collect the most Coins to win",
+      "engine_asset_id": "GM_TreasureHunt_vsAI",
+      "image_lookup_id": "",
+      "name": "TREASURE HUNT",
+      "unique_id": "d5a1c353-df82-4bd7-869d-f1404fe9aae3",
+      "xp_bonus_goal": "coins"
+    },
+    {
+      "description": "Rocketball vs. AI Bots with character stacking",
+      "engine_asset_id": "GM_Rocketball_vsAI_PvE",
+      "image_lookup_id": "",
+      "name": "Bot Rocketball",
+      "unique_id": "debd334a-0ceb-479f-bf88-7642576c2f6d",
+      "xp_bonus_goal": "goals"
+    },
+    {
+      "description": "Collect the most coins to win",
+      "engine_asset_id": "GM_TreasureHunt_SameCharacter_Dash",
+      "image_lookup_id": "",
+      "name": "Plink Treasure Hunt",
+      "unique_id": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b",
+      "xp_bonus_goal": "coins"
+    }
+  ],
+  "playlist": [
+    {
+      "auto_ban_enabled": false,
+      "background_id": "Blue",
+      "description": "Cooperatively battle against AI-controlled opponents",
+      "enabled": true,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "onboarding",
+      "icon_id": "Onboarding",
+      "is_pve_only": true,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b55e7e1f-790d-42ab-b645-a638473b9d2d"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b55e7e1f-790d-42ab-b645-a638473b9d2d"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b55e7e1f-790d-42ab-b645-a638473b9d2d"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "be35183d-35df-4a50-8cd8-fa20f891a2c2"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "be35183d-35df-4a50-8cd8-fa20f891a2c2"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "b55e7e1f-790d-42ab-b645-a638473b9d2d"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b55e7e1f-790d-42ab-b645-a638473b9d2d"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 6,
+          "playlist_definition": "1f1538ca-99b4-4e93-86f0-e5456150c3eb",
+          "size": "3"
+        }
+      ],
+      "material_id": "Championship Tour",
+      "max_filters": 10,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "CO-OP ARENA",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#242120",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#1A6EFF",
+      "unique_id": "1f1538ca-99b4-4e93-86f0-e5456150c3eb",
+      "xp_multiplier": "100.00"
+    },
+    {
+      "auto_ban_enabled": false,
+      "background_id": "unset",
+      "description": "3v3 PvP Matchmaking",
+      "enabled": true,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": true,
+      "gamelift_id": "playnow",
+      "icon_id": "PlayGroup",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 130,
+          "playlist_definition": "e25b7f0b-dd2f-43e4-a1af-6c080bffa668",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [
+        { "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed", "percentage": 30 },
+        { "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0", "percentage": 30 },
+        { "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2", "percentage": 30 },
+        { "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1", "percentage": 10 }
+      ],
+      "name": "Final Sendoff",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "e25b7f0b-dd2f-43e4-a1af-6c080bffa668",
+      "xp_multiplier": "100.00"
+    },
+    {
+      "auto_ban_enabled": false,
+      "background_id": "Green",
+      "description": "Cooperatively battle against AI-controlled opponents",
+      "enabled": true,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": true,
+      "gamelift_id": "playvsai",
+      "icon_id": "Coop",
+      "is_pve_only": true,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "01945f28-2295-4c14-bc62-6446365836f2"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 1,
+          "playlist_definition": "0398e8b7-d26b-4355-a407-d5d5bf6c0acf",
+          "size": "3"
+        }
+      ],
+      "material_id": "Championship Tour",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [
+        { "mode": "01945f28-2295-4c14-bc62-6446365836f2", "percentage": 35 },
+        { "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd", "percentage": 20 },
+        { "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d", "percentage": 30 },
+        { "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3", "percentage": 15 }
+      ],
+      "name": "Co-op Arena",
+      "onboarding_alt_playlist": "1f1538ca-99b4-4e93-86f0-e5456150c3eb",
+      "outline_color": "#242120",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#88F662",
+      "unique_id": "0398e8b7-d26b-4355-a407-d5d5bf6c0acf",
+      "xp_multiplier": "100.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "Blue",
+      "description": "3v3 Social Matchmaking",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": true,
+      "gamelift_id": "unset",
+      "icon_id": "PlayGroup",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 3,
+          "playlist_definition": "d7ff1a74-a9af-479d-baea-a17e175eb6d2",
+          "size": "3"
+        }
+      ],
+      "material_id": "Championship Tour",
+      "max_filters": 10,
+      "max_party_size": 3,
+      "mode_percentages": [
+        { "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed", "percentage": 34 },
+        { "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2", "percentage": 33 },
+        { "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0", "percentage": 33 }
+      ],
+      "name": "Greatest Hits",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#242120",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#1A6EFF",
+      "unique_id": "d7ff1a74-a9af-479d-baea-a17e175eb6d2",
+      "xp_multiplier": "20.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "3v3 PvP Matchmaking",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": true,
+      "gamelift_id": "none",
+      "icon_id": "Blast Ball Arena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 129,
+          "playlist_definition": "89c85a34-f1b1-4612-97da-dd8d3d35ff08",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [
+        { "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed", "percentage": 20 },
+        { "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2", "percentage": 20 },
+        { "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1", "percentage": 20 },
+        { "mode": "6464ffc5-d91a-45ff-b107-427c6b963803", "percentage": 20 },
+        { "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0", "percentage": 20 }
+      ],
+      "name": "Runaway Megadon",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "89c85a34-f1b1-4612-97da-dd8d3d35ff08",
+      "xp_multiplier": "40.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Beach Ball and more!",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": true,
+      "gamelift_id": "none",
+      "icon_id": "Beach Ball",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "131193c2-aca3-4c0d-9e54-55de9addf6e8"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "131193c2-aca3-4c0d-9e54-55de9addf6e8"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "5a4d875a-1333-44cf-b123-153dbd0ce0e2"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b7a6466b-de48-47e6-9cb5-5f10127ecac1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "2e0d0a5b-db28-4ca2-a3d5-992c05336193",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 128,
+          "playlist_definition": "6ce3816c-ea8f-4b7f-83e6-300787558d18",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Blast in Paradise",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "6ce3816c-ea8f-4b7f-83e6-300787558d18",
+      "xp_multiplier": "30.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Duel your Opponent! The first to 5 KOs wins",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "duel",
+      "icon_id": "Duel",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "6278f329-7ecb-43a8-ae75-32526fde05f2"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "6278f329-7ecb-43a8-ae75-32526fde05f2"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "6278f329-7ecb-43a8-ae75-32526fde05f2"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "6278f329-7ecb-43a8-ae75-32526fde05f2"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "6278f329-7ecb-43a8-ae75-32526fde05f2"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "6278f329-7ecb-43a8-ae75-32526fde05f2"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 82,
+          "playlist_definition": "5bd2338c-768c-4e3e-9304-c8f8089fb239",
+          "size": "1"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 1,
+      "mode_percentages": [],
+      "name": "Duel",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 2,
+      "text_color": "#FF0000",
+      "unique_id": "5bd2338c-768c-4e3e-9304-c8f8089fb239",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Players take greatly increased damage!  Knockout opponents to win.",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "AllCratersEve",
+      "fill_with_bots": true,
+      "gamelift_id": "none",
+      "icon_id": "Splat",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "6464ffc5-d91a-45ff-b107-427c6b963803"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 88,
+          "playlist_definition": "e1b5137d-cf6f-44a0-923d-5a0aee21abe3",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Splat",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "e1b5137d-cf6f-44a0-923d-5a0aee21abe3",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Knockout your opponents with reduced cooldowns",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "AllCratersEve",
+      "fill_with_bots": true,
+      "gamelift_id": "none",
+      "icon_id": "TurboRocketArena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "2b00864e-e391-4ae5-a37d-182bc9dab4ce"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 118,
+          "playlist_definition": "de558dfd-8920-4680-8ffa-6a5236d0f88e",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Turbo Knockout",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "de558dfd-8920-4680-8ffa-6a5236d0f88e",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Snowball Fight",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "FrostFest",
+      "fill_with_bots": true,
+      "gamelift_id": "unset",
+      "icon_id": "SnowballFight",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "603ce0f7-22a1-4a47-949b-c96341fd28c1"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 87,
+          "playlist_definition": "a21d5f64-07f9-4840-808c-99e8bf7296f3",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Snowball Fight",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "a21d5f64-07f9-4840-808c-99e8bf7296f3",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Capture Mega Rockets while taking more impulse and less damage",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "AllCratersEve",
+      "fill_with_bots": true,
+      "gamelift_id": "none",
+      "icon_id": "MoshPit Arena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "131193c2-aca3-4c0d-9e54-55de9addf6e8"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "131193c2-aca3-4c0d-9e54-55de9addf6e8"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "131193c2-aca3-4c0d-9e54-55de9addf6e8"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "131193c2-aca3-4c0d-9e54-55de9addf6e8"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 48,
+          "playlist_definition": "77a48281-4a89-46ee-b983-dc6a9ad3b5e1",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Mega Rocket Mayhem",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "77a48281-4a89-46ee-b983-dc6a9ad3b5e1",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "KO opponents to win",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "none",
+      "icon_id": "2v2KnockoutPlaylist",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "2b168ce5-83ae-4718-a80c-1682eb3c9cb1"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 93,
+          "playlist_definition": "a3dc3ccf-5f63-4aa9-a383-467d7980eca6",
+          "size": "2"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 2,
+      "mode_percentages": [],
+      "name": "2v2 Knockout",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 4,
+      "text_color": "#FF0000",
+      "unique_id": "a3dc3ccf-5f63-4aa9-a383-467d7980eca6",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Score the Beach Ball 5 Times to Win",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": true,
+      "gamelift_id": "none",
+      "icon_id": "Beach Ball",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "848f32b0-f420-447e-b9b4-8c0c946c456a"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 125,
+          "playlist_definition": "8e65c337-da07-4a55-a9d3-2d31339085e0",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Beach Ball",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "8e65c337-da07-4a55-a9d3-2d31339085e0",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "All Rev Knockout with reduced Special cooldown and increased speed",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "event",
+      "icon_id": "AllRevPlaylist",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "48aafa2d-7eef-4f60-8f48-9388fbf736a1"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "48aafa2d-7eef-4f60-8f48-9388fbf736a1"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "48aafa2d-7eef-4f60-8f48-9388fbf736a1"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "48aafa2d-7eef-4f60-8f48-9388fbf736a1"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 127,
+          "playlist_definition": "d5deaeb6-3afa-4a72-aa20-559cf328f2f8",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Joust",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "d5deaeb6-3afa-4a72-aa20-559cf328f2f8",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "3v3 All Plink Matchmaking",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "AllPlinkPlaylist",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 124,
+          "playlist_definition": "b95bd746-a9a9-40c9-a822-3ad5b50c9c1e",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Plink Arena",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "b95bd746-a9a9-40c9-a822-3ad5b50c9c1e",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "3v3 All Flux Matchmaking",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "AllFluxPlaylist",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 123,
+          "playlist_definition": "64537d05-f1c8-43cb-8a70-22b7bc24e5db",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Flux Arena",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "64537d05-f1c8-43cb-8a70-22b7bc24e5db",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "All Gant Hero Form Knockout",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "none",
+      "icon_id": "AllGantPlaylist",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 122,
+          "playlist_definition": "e3adb2b1-fce7-4904-8705-c3e750d8806b",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Gryphons Only",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "e3adb2b1-fce7-4904-8705-c3e750d8806b",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Knockout Opponents as Kayi",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "FrostFest",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "IcyMirrorArena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b6f906f8-765d-4175-8f9a-6056f166b0c1"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b6f906f8-765d-4175-8f9a-6056f166b0c1"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "b6f906f8-765d-4175-8f9a-6056f166b0c1"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "b6f906f8-765d-4175-8f9a-6056f166b0c1"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "b6f906f8-765d-4175-8f9a-6056f166b0c1"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 85,
+          "playlist_definition": "41b4273f-3909-4350-b252-2dac08295907",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Icy Mirror",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "41b4273f-3909-4350-b252-2dac08295907",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "3v3 All Kayi Matchmaking",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "FrostFest",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "MythicKayiArena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "34067c21-8f3a-4876-a62d-44f54fd6641e"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "329a56f9-d19f-4629-ac96-ac1b8c12e83a"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        }
+      ],
+      "matchsizes": [],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Kayi Arena",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "34f93dd6-d6f4-4051-9ea5-bed0ee6ae64d",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Test",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "FrostFest",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "RandomRocket",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "6a1eecc3-6366-48ef-8e3b-da48ddf5f7ce"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 86,
+          "playlist_definition": "29e4b948-f95f-478c-abd4-31c864549878",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Random Rocket (inactive)",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "29e4b948-f95f-478c-abd4-31c864549878",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "SnowDuelArena",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "FrostFest",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "SnowDuelArena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "603793f4-0067-4cd8-a43f-6f3dd256bee4"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 91,
+          "playlist_definition": "e9c0b28d-b719-4e8c-8264-e97b8fadeef3",
+          "size": "1"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 1,
+      "mode_percentages": [],
+      "name": "Snowy Duel (inactive)",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 2,
+      "text_color": "#FF0000",
+      "unique_id": "e9c0b28d-b719-4e8c-8264-e97b8fadeef3",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": false,
+      "background_id": "unset",
+      "description": "Friends \u0026 Family",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "unset",
+      "is_pve_only": true,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "debd334a-0ceb-479f-bf88-7642576c2f6d"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "8ff513ec-0bd5-4de3-b2bd-cf172bb43fb3"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "924f88e9-0de8-4e34-9d7e-f9f4aee8b9cd"
+        }
+      ],
+      "matchsizes": [],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Friends \u0026 Family (Inactive)",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "bd049a48-8549-478d-a8c0-9d22c3515440",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Throw, score, or get rid of the Blast Ball before it explodes!",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "Blast Ball Arena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2e056246-cb80-4016-adf8-c26cc19c5c4b"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 81,
+          "playlist_definition": "057a361b-4d9d-4fef-bbba-c05f8a028145",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Blast Ball",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "057a361b-4d9d-4fef-bbba-c05f8a028145",
+      "xp_multiplier": "10.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "3v3 All Izell Matchmaking",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unsetconjurariley",
+      "icon_id": "MythicIzellArena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "41466308-b284-4e30-b641-2fd5afc42e1e"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 83,
+          "playlist_definition": "c6b91914-248f-48b6-9fd1-cc0c9aa26f2f",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [
+        { "mode": "41466308-b284-4e30-b641-2fd5afc42e1e", "percentage": 90 },
+        { "mode": "5760afb5-16ac-4805-acfc-d1eb478734c1", "percentage": 10 }
+      ],
+      "name": "Izell Arena",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "c6b91914-248f-48b6-9fd1-cc0c9aa26f2f",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Test",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "FrostFest",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "TurboRandomRocketArena",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "b207253d-2c5f-4613-b701-ae2a7516401e"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 89,
+          "playlist_definition": "e0a5e11b-c5f4-49ad-a3c9-766753cae2d9",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Turbo Random Rocket (inactive)",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": true,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "e0a5e11b-c5f4-49ad-a3c9-766753cae2d9",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "KO opponents to win",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "Knockout",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "b2b7ab9e-892c-4dde-beee-e8a2efb070ed"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 119,
+          "playlist_definition": "d70caae4-b9e0-46ea-8af4-b2c8ded8f037",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Knockout",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 6,
+      "text_color": "#FF0000",
+      "unique_id": "d70caae4-b9e0-46ea-8af4-b2c8ded8f037",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": false,
+      "background_id": "unset",
+      "description": "Test playlist",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "unset",
+      "is_pve_only": true,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "4a51c241-ab38-4fce-9992-bb43f92fc4aa"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "7373f2e8-7194-4276-a401-6805536e0380",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "060cb0d2-230b-4669-8b3d-cbab80af203e"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "17434fe1-ebbc-414e-9582-71dee166620e",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "56fcfbec-7e00-41fc-8765-45f651d2d841",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "32fb63c0-eda9-421f-9f59-2dd30a0869e6"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "41901180-e601-48e4-a1be-89f978f70d5b",
+          "mode": "fbbe54cc-18b4-4b8e-960d-91bc2cfcef3b"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "16951fa8-59ff-4407-92c9-1224bd2dcc23"
+        },
+        {
+          "map": "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+          "mode": "2211d38d-d1ce-478f-8995-696d76ea8e32"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "3256ee8a-e36e-4269-95fe-ec8259008151"
+        },
+        {
+          "map": "62accb32-17e4-4d05-983f-0cb0da7a4174",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+          "mode": "718ff528-9c1e-418d-8e64-09f81b239af1"
+        },
+        {
+          "map": "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+          "mode": "4366504e-a203-402a-a806-6c54cf03dc63"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 92,
+          "playlist_definition": "574a8d0b-5608-4022-a62f-6d4c79b90c60",
+          "size": "3"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "Test",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 3,
+      "text_color": "#FF0000",
+      "unique_id": "574a8d0b-5608-4022-a62f-6d4c79b90c60",
+      "xp_multiplier": "1.00"
+    },
+    {
+      "auto_ban_enabled": true,
+      "background_id": "unset",
+      "description": "Score the Rocketball 5 Times to Win",
+      "enabled": false,
+      "end_date": null,
+      "event_name": "none",
+      "fill_with_bots": false,
+      "gamelift_id": "unset",
+      "icon_id": "Tropic Doubles Rocketball",
+      "is_pve_only": false,
+      "is_ranked": false,
+      "map_mode_list": [
+        {
+          "map": "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "a82526cb-6d9b-457d-9b57-d440cc912393",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        },
+        {
+          "map": "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+          "mode": "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0"
+        }
+      ],
+      "matchsizes": [
+        {
+          "id": 126,
+          "playlist_definition": "b71a736b-235d-493a-9fa1-b5a75c7e674f",
+          "size": "2"
+        }
+      ],
+      "material_id": "unset",
+      "max_filters": 3,
+      "max_party_size": 3,
+      "mode_percentages": [],
+      "name": "2v2 Rocketball",
+      "onboarding_alt_playlist": null,
+      "outline_color": "#FF0000",
+      "supports_intermission": false,
+      "target_player_count": 4,
+      "text_color": "#FF0000",
+      "unique_id": "b71a736b-235d-493a-9fa1-b5a75c7e674f",
+      "xp_multiplier": "1.00"
+    }
+  ],
+  "privatematchmaps": [
+    "17434fe1-ebbc-414e-9582-71dee166620e",
+    "1f2bba27-97f1-4023-afe5-3a9f814c6446",
+    "abdd68df-e3f8-4b6c-adbf-9af75d5dc316",
+    "a82526cb-6d9b-457d-9b57-d440cc912393",
+    "11230daf-f6c5-4018-bff5-ae9245da8fbd",
+    "62accb32-17e4-4d05-983f-0cb0da7a4174",
+    "10e15e45-aad3-4f6c-9fd4-3dc3369f48ff",
+    "6ef703fb-b5f2-4a31-adbd-1d2ec3f0d332",
+    "945d2128-c74a-4c45-9bf3-d462e4020bb7",
+    "7373f2e8-7194-4276-a401-6805536e0380",
+    "41901180-e601-48e4-a1be-89f978f70d5b",
+    "eed76d16-2bb6-4335-98ea-fb8575b7dc5f",
+    "56fcfbec-7e00-41fc-8765-45f651d2d841",
+    "34988a04-5d3f-4f0a-ab4b-51ead43ba3c8",
+    "2e0d0a5b-db28-4ca2-a3d5-992c05336193"
+  ],
+  "privatematchmodes": [
+    "b2b7ab9e-892c-4dde-beee-e8a2efb070ed",
+    "2b8801ab-2deb-4b3c-ad06-61bf3166ebd0",
+    "5a4d875a-1333-44cf-b123-153dbd0ce0e2",
+    "86a17390-de0d-49ad-8b7c-972e674e3964",
+    "b7a6466b-de48-47e6-9cb5-5f10127ecac1",
+    "2b00864e-e391-4ae5-a37d-182bc9dab4ce",
+    "6464ffc5-d91a-45ff-b107-427c6b963803",
+    "848f32b0-f420-447e-b9b4-8c0c946c456a",
+    "131193c2-aca3-4c0d-9e54-55de9addf6e8",
+    "603ce0f7-22a1-4a47-949b-c96341fd28c1",
+    "16951fa8-59ff-4407-92c9-1224bd2dcc23",
+    "48aafa2d-7eef-4f60-8f48-9388fbf736a1",
+    "6278f329-7ecb-43a8-ae75-32526fde05f2"
+  ],
+  "trialsmapsmodes": [
+    {
+      "map": "4f01b3e8-4422-46b7-b8e7-ab877a644114",
+      "mode": "0fe68299-7c8f-45ba-a941-2c4e69ef9356"
+    }
+  ]
+}
