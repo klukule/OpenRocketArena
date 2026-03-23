@@ -191,6 +191,9 @@ internal class Program
         if (!forwardedArgs.Any(a => a.Equals("-noeac", StringComparison.OrdinalIgnoreCase)))
             forwardedArgs.Add("-noeac");
 
+        if (!forwardedArgs.Any(a => a.StartsWith("-MangoRealm", StringComparison.OrdinalIgnoreCase)))
+            forwardedArgs.Add("-MangoRealm=\"prod\"");
+
         if (serverMode)
         {
             string[] serverDefaults = ["-nullrhi", "-nosplash", "-nosound", "-nopause", "-unattended", "-log"];
