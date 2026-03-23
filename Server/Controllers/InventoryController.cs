@@ -145,9 +145,25 @@ public class InventoryController(AppDbContext db, CmsStoreService store, ILogger
 
         if (inventory == null)
         {
-            inventory = new PlayerInventory { AccountId = accountId };
-            db.PlayerInventories.Add(inventory);
-            await db.SaveChangesAsync();
+            try
+            {
+                inventory = new PlayerInventory { AccountId = accountId };
+                db.PlayerInventories.Add(inventory);
+                await db.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                // Race condition - another request created it first (case during first user login)
+                db.ChangeTracker.Clear();
+                inventory = await db.PlayerInventories
+                    .Include(i => i.Items)
+                    .Include(i => i.Chests)
+                    .Include(i => i.DupeItems)
+                    .Include(i => i.BlastPasses)
+                    .Include(i => i.Promotions)
+                    .Include(i => i.OneTimeOffers)
+                    .FirstAsync(i => i.AccountId == accountId);
+            }
         }
 
         return inventory;
