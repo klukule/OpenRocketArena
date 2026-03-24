@@ -5,9 +5,9 @@ public class PlaylistRanking
     public long Id { get; set; }
     public long ProfileId { get; set; }
     public string PlaylistId { get; set; } = string.Empty;
-    public float SkillMean { get; set; }
-    public float SkillStdDev { get; set; }
-    public float Rank { get; set; }
+    public double SkillMean { get; set; }
+    public double SkillStdDev { get; set; }
+    public double Rank { get; set; }
     public int GamesPlayed { get; set; }
     public int GamesWon { get; set; }
     public int GamesQuit { get; set; }

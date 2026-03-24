@@ -283,9 +283,9 @@ public class ProfileController(AppDbContext db, CmsProgressionData progression, 
             {
                 PlayerId = playerId,
                 PlaylistId = pr.PlaylistId,
-                SkillMean = pr.SkillMean,
-                SkillStdDev = pr.SkillStdDev,
-                Rank = pr.Rank,
+                SkillMean = (float)pr.SkillMean,
+                SkillStdDev = (float)pr.SkillStdDev,
+                Rank = (float)pr.Rank,
                 GamesPlayed = pr.GamesPlayed,
                 GamesWon = pr.GamesWon,
                 GamesQuit = pr.GamesQuit,
@@ -317,6 +317,39 @@ public class ProfileController(AppDbContext db, CmsProgressionData progression, 
     public async Task<IActionResult> PostMatchEnd([FromBody] MatchData request)
     {
         var rawJson = System.Text.Json.JsonSerializer.Serialize(request);
+
+        // Pre-compute team average skill for rating.
+        var teamMeanSum = new double[2];
+        var teamStdDevSum = new double[2];
+        var teamSize = new int[2];
+
+        if (!string.IsNullOrEmpty(request.PlaylistUniqueId))
+        {
+            foreach (var p in request.Players)
+            {
+                if (p.IsABot || p.TeamIndex < 0 || p.TeamIndex > 1) continue;
+                var pParts = p.MangoId.Split(':');
+                if (pParts.Length == 0 || !long.TryParse(pParts[0], out var pAccountId)) continue;
+
+                var ranking = await db.PlaylistRankings.Include(r => r.Profile).FirstOrDefaultAsync(r => r.Profile.AccountId == pAccountId && r.PlaylistId == request.PlaylistUniqueId);
+
+                var mean = ranking?.SkillMean ?? RatingService.InitialMean;
+                var stdDev = ranking?.SkillStdDev ?? RatingService.InitialStdDev;
+
+                teamMeanSum[p.TeamIndex] += mean;
+                teamStdDevSum[p.TeamIndex] += stdDev;
+                teamSize[p.TeamIndex] += 1;
+            }
+        }
+
+        // Compute averages (fall back to defaults if a team has no human players)
+        var teamAvgMean = new double[2];
+        var teamAvgStdDev = new double[2];
+        for (var t = 0; t < 2; t++)
+        {
+            teamAvgMean[t] = teamSize[t] > 0 ? teamMeanSum[t] / teamSize[t] : RatingService.InitialMean;
+            teamAvgStdDev[t] = teamSize[t] > 0 ? teamStdDevSum[t] / teamSize[t] : RatingService.InitialStdDev;
+        }
 
         foreach (var player in request.Players)
         {
@@ -504,14 +537,17 @@ public class ProfileController(AppDbContext db, CmsProgressionData progression, 
                 else if (isQuit) { ranking.GamesQuit++; ranking.Streak = 0; }
                 else { ranking.Streak = 0; }
 
-                var (newMean, newStdDev) = RatingService.UpdateRating(
-                    ranking.SkillMean, ranking.SkillStdDev, isWin, isDraw);
+                var victoryType = isWin ? RatingService.VictoryType.Win : isDraw ? RatingService.VictoryType.Draw : isQuit ? RatingService.VictoryType.Quit : RatingService.VictoryType.Lose;
+
+                var opposingTeamIndex = (player.TeamIndex + 1) % 2;
+                var opponentMean = teamAvgMean[opposingTeamIndex];
+                var opponentStdDev = teamAvgStdDev[opposingTeamIndex];
+
+                var (newMean, newStdDev) = RatingService.UpdateRating(ranking.SkillMean, ranking.SkillStdDev, opponentMean, opponentStdDev, victoryType);
 
                 ranking.SkillMean = newMean;
                 ranking.SkillStdDev = newStdDev;
-                ranking.Rank = RatingService.CalculateRank(
-                    newMean, newStdDev, ranking.GamesPlayed, ranking.GamesWon,
-                    (int)progression.XpConfig.RankConvergence, (int)progression.XpConfig.RankLogBase);
+                ranking.Rank = RatingService.CalculateRank(newMean, ranking.GamesWon, ranking.GamesQuit, (int)progression.XpConfig.RankConvergence, (int)progression.XpConfig.RankLogBase);
                 var botThresholds = matchmakingData.GetBotLevelsForPlaylist(request.PlaylistUniqueId);
                 ranking.BotLevel = RatingService.CalculateBotLevel(ranking.SkillMean, botThresholds);
                 ranking.UpdatedAt = DateTime.UtcNow;

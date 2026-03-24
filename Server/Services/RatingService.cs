@@ -1,81 +1,107 @@
 namespace OpenRocketArena.Server.Services;
 
 /// <summary>
-/// Rating calculations for Open Rocket Arena.
-/// 
-/// TODO: This needs complete rework - I just shoehorned TrueSkill like formulas to get something working,
-/// game uses bespoke rating that I can't really figure out from the client.
+/// Rating calculations for Open Rocket Arena. Uses TrueSkill algorithm
+/// https://www.microsoft.com/en-us/research/wp-content/uploads/2007/01/NIPS2006_0688.pdf
 /// </summary>
 public static class RatingService
 {
-    // TrueSkill defaults (matching the game's initial values)
-    public const float InitialMean = 25.0f;
-    public const float InitialStdDev = 25.0f / 3.0f; // ~8.333
-    private const float Beta = 25.0f / 6.0f;          // ~4.167 (performance variance)
-    private const float DynamicsFactor = 25.0f / 300.0f; // tau - uncertainty increase per game
+    // TrueSkill defaults
+    public const double InitialMean = 25.0;
+    public const double InitialStdDev = 8.0;            // Initial sigma
+    private const double Beta = 25.0 / 6.0;             // ~4.167
+    private const double DynamicsFactor = 25.0 / 300.0; // ~0.0833
+    private const double DrawProbability = 0.0;
+
+    public enum VictoryType { Win, Lose, Draw, Quit }
 
     /// <summary>
-    /// Update a player's rating after a match result.
+    /// Update a player's skill rating after a match.
     /// </summary>
-    public static (float newMean, float newStdDev) UpdateRating(float mean, float stdDev, bool isWin, bool isDraw, float opponentMean = InitialMean)
+    public static (double newMean, double newStdDev) UpdateRating(double mean, double stdDev, double opponentMean, double opponentStdDev, VictoryType outcome)
     {
-        // Add dynamics factor
-        var phi = (float)Math.Sqrt(stdDev * stdDev + DynamicsFactor * DynamicsFactor);
+        // If player quit do not update SR
+        if (outcome == VictoryType.Quit)
+            return (mean, stdDev);
 
-        // Combined variance
-        var c = (float)Math.Sqrt(2.0 * Beta * Beta + phi * phi);
+        var drawMargin = GetDrawMarginFromDrawProbability(DrawProbability, Beta);
+        var playerSigmaSq = stdDev * stdDev;
+        var opponentSigmaSq = opponentStdDev * opponentStdDev;
 
-        // Expected score
-        var diff = (mean - opponentMean) / c;
-        var expected = Sigmoid(diff);
+        var c = Math.Sqrt(playerSigmaSq + opponentSigmaSq + 2.0 * Beta * Beta);
 
-        // Actual score
-        var actual = isWin ? 1.0f : (isDraw ? 0.5f : 0.0f);
+        var winningMean = mean;
+        var losingMean = opponentMean;
 
-        // Update factor
-        var v = phi * phi / (c * c);
+        if (outcome == VictoryType.Lose)
+        {
+            winningMean = opponentMean;
+            losingMean = mean;
+        }
 
-        // Update mean - scale by 2.0 for faster convergence
-        var newMean = mean + v * (actual - expected) * c * 2.0f;
+        var meanDelta = winningMean - losingMean;
 
-        // Update std dev - decrease with each game
-        var newStdDev = (float)Math.Sqrt(phi * phi * (1.0 - v * 0.1));
+        double v, w;
+        var winLossMultiplier = 1.0;
 
-        // Clamp to reasonable bounds
-        newMean = Math.Clamp(newMean, 0.0f, 50.0f);
-        newStdDev = Math.Clamp(newStdDev, 0.5f, InitialStdDev);
+        if (outcome == VictoryType.Draw)
+        {
+            v = VWithinMargin(meanDelta, drawMargin, c);
+            w = WWithinMargin(meanDelta, drawMargin, c);
+        }
+        else
+        {
+            v = VExceedsMargin(meanDelta, drawMargin, c);
+            w = WExceedsMargin(meanDelta, drawMargin, c);
+            if (outcome == VictoryType.Lose)
+                winLossMultiplier = -1.0;
+        }
+
+        // Update the mean
+        var varianceWithDynamics = playerSigmaSq + DynamicsFactor * DynamicsFactor;
+        var meanMultiplier = varianceWithDynamics / c;
+        var newMean = mean + winLossMultiplier * meanMultiplier * v;
+
+        // Update std dev
+        var stdDevMultiplier = varianceWithDynamics / (c * c);
+        var newStdDev = Math.Sqrt(varianceWithDynamics * (1.0 - w * stdDevMultiplier));
+
+        // Fallback
+        if (double.IsNaN(newStdDev) || double.IsInfinity(newStdDev))
+            newStdDev = InitialStdDev;
 
         return (newMean, newStdDev);
     }
 
     /// <summary>
-    /// Calculate display rank using convergence and log_base tuning parameters.
-    /// As games increase, confidence grows and rank reflects skill more accurately.
-    /// Formula: rank = max(1, mu - k*sigma) where k decreases from 3 toward 0 as games approach convergence.
-    /// For high-skill players with many games, rank can exceed mu via a win-rate bonus.
+    /// Calculate display rank using:
+    /// converganceAmount = min(gamesWon / convergenceValue, 1)
+    /// x = converganceAmount * (logBase - 1) + 1
+    /// rank = (mean + 5) * log_logBase(x) + 1
+    /// Capped at 50.999999
     /// </summary>
-    public static float CalculateRank(float mean, float stdDev, int gamesPlayed, int gamesWon, int rankConvergence = 350, int rankLogBase = 55)
+    public static double CalculateRank(double mean, int gamesWon, int gamesQuit, int rankConvergence = 350, int rankLogBase = 55)
     {
-        // k starts at 3.0 (very conservative) and approaches -1.0 (aggressive) as games increase
-        // This allows rank to exceed mu for experienced high-winrate players
-        var convergenceFactor = Math.Min(1.0f, (float)gamesPlayed / rankConvergence);
-        var k = 3.0f - 4.0f * convergenceFactor; // 3.0 -> -1.0
+        // Wins factor: penalize quits against wins, minimum 0
+        var gamesWonFactor = (long)Math.Max(0, gamesWon - gamesQuit);
 
-        var baseRank = mean - k * stdDev;
+        var convergenceValue = (double)rankConvergence;
+        var logBase = (double)rankLogBase;
 
-        // Win rate bonus: scaled by log_base, kicks in as convergence increases
-        var winRate = gamesPlayed > 0 ? (float)gamesWon / gamesPlayed : 0.5f;
-        var wrBonus = (winRate - 0.5f) * rankLogBase * convergenceFactor * 0.5f;
+        var converganceAmount = Math.Min(gamesWonFactor / convergenceValue, 1.0);
+        var x = converganceAmount * (logBase - 1.0) + 1.0;
 
-        return Math.Max(1.0f, baseRank + wrBonus);
+        var newRank = (mean + 5.0) * (Math.Log(x) / Math.Log(logBase)) + 1.0;
+        if (newRank >= 50.999999)
+            newRank = 50.999999;
+
+        return newRank;
     }
 
     /// <summary>
     /// Determine bot difficulty level from skill mean using PvP thresholds from CMS.
-    /// Default thresholds from matchmaking.json botlevelspvp:
-    ///   Extreme(3) >= 35, Hard(2) >= 25, Normal(1) >= 10, Easy(0) >= 0
     /// </summary>
-    public static int CalculateBotLevel(float skillMean, List<BotLevelThreshold>? thresholds = null)
+    public static int CalculateBotLevel(double skillMean, List<BotLevelThreshold>? thresholds = null)
     {
         thresholds ??= DefaultBotThresholds;
 
@@ -96,7 +122,91 @@ public static class RatingService
         new() { BotLevel = 0, SkillMin = 0 }
     ];
 
-    private static float Sigmoid(float x) => (float)(1.0 / (1.0 + Math.Exp(-1.7159 * x)));
+    // --- TrueSkill Gaussian helper functions ---
+
+    private static double GetDrawMarginFromDrawProbability(double drawProbability, double beta)
+    {
+        var x = 0.5 * (drawProbability + 1.0);
+        return GaussianSurvival(x) * Math.Sqrt(2.0) * beta;
+    }
+
+    /// <summary>
+    /// V function for the case where the margin is exceeded (win/loss).
+    /// v = N(t) / Phi(t) where t = (meanDelta - drawMargin) / c
+    /// </summary>
+    private static double VExceedsMargin(double meanDelta, double drawMargin, double c)
+    {
+        var t = (meanDelta - drawMargin) / c;
+        var pdf = GaussianPdf(t);
+        var cdf = GaussianCdf(t);
+        return cdf < 1e-15 ? -t : pdf / cdf;
+    }
+
+    /// <summary>
+    /// W function for the case where the margin is exceeded (win/loss).
+    /// w = v * (v + t) where t = (meanDelta - drawMargin) / c
+    /// </summary>
+    private static double WExceedsMargin(double meanDelta, double drawMargin, double c)
+    {
+        var t = (meanDelta - drawMargin) / c;
+        var vVal = VExceedsMargin(meanDelta, drawMargin, c);
+        return vVal * (vVal + t);
+    }
+
+    /// <summary>
+    /// V function for draws (within margin).
+    /// </summary>
+    private static double VWithinMargin(double meanDelta, double drawMargin, double c)
+    {
+        var tUpper = (drawMargin - meanDelta) / c;
+        var tLower = (-drawMargin - meanDelta) / c;
+        var pdfUpper = GaussianPdf(tUpper);
+        var pdfLower = GaussianPdf(tLower);
+        var cdfDiff = GaussianCdf(tUpper) - GaussianCdf(tLower);
+        return cdfDiff < 1e-15 ? 0.0 : (pdfLower - pdfUpper) / cdfDiff;
+    }
+
+    /// <summary>
+    /// W function for draws (within margin).
+    /// </summary>
+    private static double WWithinMargin(double meanDelta, double drawMargin, double c)
+    {
+        var tUpper = (drawMargin - meanDelta) / c;
+        var tLower = (-drawMargin - meanDelta) / c;
+        var pdfUpper = GaussianPdf(tUpper);
+        var pdfLower = GaussianPdf(tLower);
+        var cdfDiff = GaussianCdf(tUpper) - GaussianCdf(tLower);
+        if (cdfDiff < 1e-15) return 1.0;
+
+        var vVal = VWithinMargin(meanDelta, drawMargin, c);
+        return vVal * vVal + (tUpper * pdfUpper - tLower * pdfLower) / cdfDiff;
+    }
+
+    // Standard normal PDF: N(x) = exp(-x^2/2) / sqrt(2*pi)
+    private static double GaussianPdf(double x) => Math.Exp(-0.5 * x * x) / Math.Sqrt(2.0 * Math.PI);
+
+    // Standard normal CDF: Phi(x) using the error function
+    private static double GaussianCdf(double x) => 0.5 * (1.0 + Erf(x / Math.Sqrt(2.0)));
+
+    // Survival function: 1 - Phi(x)
+    private static double GaussianSurvival(double x) => 1.0 - GaussianCdf(x);
+
+    // Approximation of the error function
+    private static double Erf(double x)
+    {
+        var sign = Math.Sign(x);
+        x = Math.Abs(x);
+        const double a1 = 0.254829592;
+        const double a2 = -0.284496736;
+        const double a3 = 1.421413741;
+        const double a4 = -1.453152027;
+        const double a5 = 1.061405429;
+        const double p = 0.3275911;
+
+        var t = 1.0 / (1.0 + p * x);
+        var y = 1.0 - ((((a5 * t + a4) * t + a3) * t + a2) * t + a1) * t * Math.Exp(-x * x);
+        return sign * y;
+    }
 }
 
 public class BotLevelThreshold
