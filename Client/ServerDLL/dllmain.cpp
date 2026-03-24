@@ -197,7 +197,6 @@ static struct
     uintptr_t SelectAndLoadMap;
     uintptr_t AddGameSessionMangoIds;
     uintptr_t ConfigGetString;
-    uintptr_t ConfigGetInt;
 } Addr = {};
 
 static bool ResolveAddresses()
@@ -243,14 +242,8 @@ static bool ResolveAddresses()
     static const uint8_t pat_ConfigGetString[] = {0x4C, 0x89, 0x4C, 0x24, 0x20, 0x4C, 0x89, 0x44, 0x24, 0x18, 0x53, 0x56, 0x57, 0x41, 0x55, 0x41, 0x56, 0x41, 0x57, 0x48, 0x83, 0xEC, 0x38, 0x4C};
     Addr.ConfigGetString = FindPattern(pat_ConfigGetString, sizeof(pat_ConfigGetString), "FConfigCacheIni::GetString");
 
-    // FConfigCacheIni::GetInt: prologue + CALL GetString + post-call, with wildcard on CALL displacement
-    // Pattern: 40 53 48 83 EC 40 33 C0 49 8B D9 48 89 44 24 30 4C 8D 4C 24 30 48 89 44 24 38 48 8B 44 24 70 48 89 44 24 20 E8 ?? ?? ?? ?? 84 C0 74 1E 83 7C 24 38 00
-    static const uint8_t pat_ConfigGetInt[] = {0x40, 0x53, 0x48, 0x83, 0xEC, 0x40, 0x33, 0xC0, 0x49, 0x8B, 0xD9, 0x48, 0x89, 0x44, 0x24, 0x30, 0x4C, 0x8D, 0x4C, 0x24, 0x30, 0x48, 0x89, 0x44, 0x24, 0x38, 0x48, 0x8B, 0x44, 0x24, 0x70, 0x48, 0x89, 0x44, 0x24, 0x20, 0xE8, 0x00, 0x00, 0x00, 0x00, 0x84, 0xC0, 0x74, 0x1E, 0x83, 0x7C, 0x24, 0x38, 0x00};
-    static const uint8_t msk_ConfigGetInt[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-    Addr.ConfigGetInt = FindPatternMasked(pat_ConfigGetInt, msk_ConfigGetInt, sizeof(pat_ConfigGetInt), "FConfigCacheIni::GetInt");
-
     // Check required patterns found
-    if (!Addr.PreInitPostStartupScreen || !preInitPre || !Addr.IsDedicatedServerInstance || !Addr.OnConnectionStateChanged || !Addr.ServerTravel || !engineInit || !engineLoopInit || !Addr.ConfigGetString || !Addr.ConfigGetInt)
+    if (!Addr.PreInitPostStartupScreen || !preInitPre || !Addr.IsDedicatedServerInstance || !Addr.OnConnectionStateChanged || !Addr.ServerTravel || !engineInit || !engineLoopInit || !Addr.ConfigGetString)
     {
         Log("[Scanner] ERROR: One or more required patterns not found!\n");
         return false;
@@ -674,32 +667,6 @@ static bool __fastcall Hooked_ConfigGetString(void *thisPtr, const wchar_t *sect
     {
         Log("[Config] %ls.%ls = '%ls' -> '%ls'\n", section, key, (value->Data ? value->Data : L"(null)"), override->c_str());
         SetFString(value, override->c_str());
-        return true;
-    }
-
-    return result;
-}
-
-// ============================================================================
-// FConfigCacheIni::GetInt hook
-// ============================================================================
-typedef bool(__fastcall *ConfigGetInt_fn)(void *thisPtr, const wchar_t *section, const wchar_t *key, int *value, const FString *filename);
-static ConfigGetInt_fn Original_ConfigGetInt = nullptr;
-
-static bool __fastcall Hooked_ConfigGetInt(void *thisPtr, const wchar_t *section, const wchar_t *key, int *value, const FString *filename)
-{
-    bool result = Original_ConfigGetInt(thisPtr, section, key, value, filename);
-
-    if (!section || !key)
-        return result;
-
-    const std::wstring *override = FindIniOverride(section, key);
-    if (override)
-    {
-        int newVal = _wtoi(override->c_str());
-        Log("[Config] %ls.%ls = %d -> %d\n", section, key, value ? *value : 0, newVal);
-        if (value)
-            *value = newVal;
         return true;
     }
 
@@ -1325,7 +1292,6 @@ static bool InstallHooks()
     Original_PreInitPostStartupScreen = (PreInitPostStartupScreen_fn)Addr.PreInitPostStartupScreen;
     Original_DSM_OnConnectionStateChanged = (DSM_OnConnectionStateChanged_fn)Addr.OnConnectionStateChanged;
     Original_ConfigGetString = (ConfigGetString_fn)Addr.ConfigGetString;
-    Original_ConfigGetInt = (ConfigGetInt_fn)Addr.ConfigGetInt;
 
     LONG error = DetourTransactionBegin();
     if (error != NO_ERROR)
@@ -1359,13 +1325,6 @@ static bool InstallHooks()
     if (error != NO_ERROR)
     {
         Log("[MarinerServer] DetourAttach ConfigGetString failed: %ld\n", error);
-        return false;
-    }
-
-    error = DetourAttach((PVOID *)&Original_ConfigGetInt, (PVOID)Hooked_ConfigGetInt);
-    if (error != NO_ERROR)
-    {
-        Log("[MarinerServer] DetourAttach ConfigGetInt failed: %ld\n", error);
         return false;
     }
 

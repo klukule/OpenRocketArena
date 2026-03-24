@@ -133,7 +133,6 @@ static void InitDataSection()
 static struct
 {
     uintptr_t ConfigGetString;
-    uintptr_t ConfigGetInt;
     void **GMalloc;
 } Addr = {};
 
@@ -145,20 +144,7 @@ static bool ResolveAddresses()
         0x57, 0x41, 0x55, 0x41, 0x56, 0x41, 0x57, 0x48, 0x83, 0xEC, 0x38, 0x4C};
     Addr.ConfigGetString = FindPattern(pat_ConfigGetString, sizeof(pat_ConfigGetString), "FConfigCacheIni::GetString");
 
-    // FConfigCacheIni::GetInt (with wildcard on CALL displacement)
-    static const uint8_t pat_ConfigGetInt[] = {
-        0x40, 0x53, 0x48, 0x83, 0xEC, 0x40, 0x33, 0xC0, 0x49, 0x8B, 0xD9, 0x48, 0x89, 0x44, 0x24, 0x30,
-        0x4C, 0x8D, 0x4C, 0x24, 0x30, 0x48, 0x89, 0x44, 0x24, 0x38, 0x48, 0x8B, 0x44, 0x24, 0x70, 0x48,
-        0x89, 0x44, 0x24, 0x20, 0xE8, 0x00, 0x00, 0x00, 0x00, 0x84, 0xC0, 0x74, 0x1E, 0x83, 0x7C, 0x24,
-        0x38, 0x00};
-    static const uint8_t msk_ConfigGetInt[] = {
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
-        1, 1};
-    Addr.ConfigGetInt = FindPatternMasked(pat_ConfigGetInt, msk_ConfigGetInt, sizeof(pat_ConfigGetInt), "FConfigCacheIni::GetInt");
-
-    if (!Addr.ConfigGetString || !Addr.ConfigGetInt)
+    if (!Addr.ConfigGetString)
     {
         Log("[Scanner] ERROR: Required patterns not found!\n");
         return false;
@@ -429,38 +415,11 @@ static bool __fastcall Hooked_ConfigGetString(void *thisPtr, const wchar_t *sect
 }
 
 // ============================================================================
-// GetInt hook
-// ============================================================================
-typedef bool(__fastcall *ConfigGetInt_fn)(void *thisPtr, const wchar_t *section, const wchar_t *key, int *value, const FString *filename);
-static ConfigGetInt_fn Original_ConfigGetInt = nullptr;
-
-static bool __fastcall Hooked_ConfigGetInt(void *thisPtr, const wchar_t *section, const wchar_t *key, int *value, const FString *filename)
-{
-    bool result = Original_ConfigGetInt(thisPtr, section, key, value, filename);
-
-    if (!section || !key)
-        return result;
-
-    const std::wstring *override = FindIniOverride(section, key);
-    if (override)
-    {
-        int newVal = _wtoi(override->c_str());
-        Log("[Config] %ls.%ls -> %d\n", section, key, newVal);
-        if (value)
-            *value = newVal;
-        return true;
-    }
-
-    return result;
-}
-
-// ============================================================================
 // Install hooks
 // ============================================================================
 static bool InstallHooks()
 {
     Original_ConfigGetString = (ConfigGetString_fn)Addr.ConfigGetString;
-    Original_ConfigGetInt = (ConfigGetInt_fn)Addr.ConfigGetInt;
 
     LONG error = DetourTransactionBegin();
     if (error != NO_ERROR)
@@ -480,13 +439,6 @@ static bool InstallHooks()
     if (error != NO_ERROR)
     {
         Log("[MarinerClient] DetourAttach ConfigGetString failed: %ld\n", error);
-        return false;
-    }
-
-    error = DetourAttach((PVOID *)&Original_ConfigGetInt, (PVOID)Hooked_ConfigGetInt);
-    if (error != NO_ERROR)
-    {
-        Log("[MarinerClient] DetourAttach ConfigGetInt failed: %ld\n", error);
         return false;
     }
 
