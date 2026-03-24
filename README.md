@@ -51,7 +51,7 @@ The implementation has been tested vs. bots only although online play should be 
 
 ### Client (`Overrides.ini`)
 
-Allows to override any string or integer values from any of the game's config files as long as they're read through `FConfigCacheIni::GetString` or `FConfigCacheIni::GetInt`
+Allows to override any string or integer values from any of the game's config files as long as they're read through `FConfigCacheIni::GetString` (`GetInt`, `GetFloat`, `GetBool` etc. all internally call `GetString`)
 
 #### `[OnlineSubsystemSteamFSG]`
 
