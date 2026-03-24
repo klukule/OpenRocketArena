@@ -31,8 +31,7 @@ public class MatchmakingController(IConfiguration config, MatchmakingService mat
     {
         var playerId = ResolvePlayerId();
 
-        var ticket = matchmaking.StartMatchmaking(
-            ticketId, playerId, request.Playlist, request.UserSelectedMatchmakingRegion, request.RegionPings);
+        var ticket = matchmaking.StartMatchmaking(ticketId, playerId, request.Playlist, request.UserSelectedMatchmakingRegion, request.RegionPings);
 
         return Ok(new StartMatchmakingResponse
         {

@@ -241,17 +241,17 @@ public class MatchmakingService : IHostedService, IDisposable
                 CompleteMatch(matchGroup, playlistId, 0);
             }
 
-            // Fill with bots after timeout
-            if (playlist?.FillWithBots == true)
+            // Create incomplete session with bots
+            if (playlist?.FillWithBots == true && tickets.Count > 0)
             {
-                foreach (var ticket in tickets)
+                // Check if any ticket has waited long enough to trigger bot fill
+                var oldestWait = (DateTime.UtcNow - tickets[0].StartTime).TotalSeconds;
+                if (oldestWait >= BotFillTimeoutSeconds)
                 {
-                    var waitTime = (DateTime.UtcNow - ticket.StartTime).TotalSeconds;
-                    if (waitTime >= BotFillTimeoutSeconds)
-                    {
-                        var botsNeeded = targetCount - 1; // just this player + bots
-                        CompleteMatch([ticket], playlistId, botsNeeded);
-                    }
+                    // Take all remaining tickets (up to target count) and fill the rest with bots
+                    var matchGroup = tickets.Take(targetCount).ToList();
+                    var botsNeeded = targetCount - matchGroup.Count;
+                    CompleteMatch(matchGroup, playlistId, botsNeeded);
                 }
             }
         }
@@ -294,18 +294,23 @@ public class MatchmakingService : IHostedService, IDisposable
             IsMatchmakingSession = true
         };
 
-        // Build matchmaker data
+        // Build matchmaker data — split players across two teams in odd-even fashion
+        // TODO: Build balanced teams based on SR (although we should only ever pass similarly matched players to CompleteMatch) and keep party members together
+        var team1Players = new List<MatchmakerPlayer>();
+        var team2Players = new List<MatchmakerPlayer>();
+        for (var i = 0; i < tickets.Count; i++)
+        {
+            (i % 2 == 0 ? team1Players : team2Players).Add(new MatchmakerPlayer { PlayerId = tickets[i].PlayerId });
+        }
+
         var matchmakerData = new MatchmakerData
         {
             MatchId = matchId,
             MatchmakingConfigurationArn = configArn,
             Teams =
             [
-                new MatchmakerTeam
-                {
-                    Name = "team1",
-                    Players = tickets.Select(t => new MatchmakerPlayer { PlayerId = t.PlayerId }).ToList()
-                }
+                new MatchmakerTeam { Name = "team1", Players = team1Players },
+                new MatchmakerTeam { Name = "team2", Players = team2Players }
             ]
         };
 
