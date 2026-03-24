@@ -109,7 +109,7 @@ optional, uncomment to enable voice chat - by default game will try to use origi
 
 ### Steam API Key
 
-The backend needs a Steam Web API key to authenticate players. When a client connects, it sends a Steam session ticket. The backend validates this ticket against Steam's servers and retrieves the player's SteamID and profile information. This is the same flow the original EA servers used. The key is only used server-side in `Services/SteamAuthService.cs` and is never exposed to clients or API.
+The backend needs a Steam Web API key to authenticate players. When a client connects, it sends a Steam session ticket. The backend validates this ticket against Steam's servers and retrieves the player's SteamID and profile information. This is the same flow the original backend used. The key is only used server-side in `Services/SteamAuthService.cs` and is never exposed to clients or API.
 
 There are two types:
 
