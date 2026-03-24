@@ -28,6 +28,10 @@ The implementation has been tested vs. bots only although online play should be 
 - Origin friends list
 - Everything runs locally
 
+## Known Issues
+
+- When viewing certain inventory items (Totem,  Retrun Trails, Megablasts, etc.) that haven't been customized yet, the game shows *"We're sorry. The item you were viewing is no longer available."* - simply equip any customization option for that slot to prevent the message from showing again (on that slot). This is cosmetic only and doesn't prevent modifications.
+
 ## Prerequisites
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/)
