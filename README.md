@@ -105,9 +105,11 @@ optional, uncomment to enable voice chat - by default game will try to use origi
 
 > **Note:** Vivox requires a registered Vivox/Unity account. Both the backend (`appsettings.json`) and client (`Overrides.ini`) must have matching issuer and domain values. The backend also needs the `Vivox:TokenKey` for signing tokens.
 
-### Steam API Keys
+### Steam API Key
 
-You need a Steam Web API key. There are two types:
+The backend needs a Steam Web API key to authenticate players. When a client connects, it sends a Steam session ticket. The backend validates this ticket against Steam's servers and retrieves the player's SteamID and profile information. This is the same flow the original EA servers used. The key is only used server-side in `Services/SteamAuthService.cs` and is never exposed to clients or API.
+
+There are two types:
 
 - **Publisher key** (recommended) - Available from [Steamworks Partner site](https://partner.steamgames.com/) under Users & Permissions > Manage Groups > select group > Web API. Requires being a Steamworks partner. Uses `partner.steam-api.com`.
 - **Public key** - Available from [Steam Web API Key page](https://steamcommunity.com/dev/apikey). Anyone with a Steam account can get one. Uses `api.steampowered.com`.
