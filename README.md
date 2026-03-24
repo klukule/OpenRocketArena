@@ -6,6 +6,8 @@
 
 The implementation has been tested vs. bots only although online play should be possible by exposing the server to the internet and modifying necessary configs + handling portforwarding etc.
 
+The included CMS data is based on version 759 (the final update), which includes the *Final Sendoff* playlist. Other playlists can be enabled by modifying the CMS data in `Backend/wwwroot/cms/`.
+
 ## What works (hopefully)
 
 - EA/Origin server emulation (EADC)
@@ -31,6 +33,8 @@ The implementation has been tested vs. bots only although online play should be 
 ## Known Issues
 
 - When viewing certain inventory items (Totem,  Retrun Trails, Megablasts, etc.) that haven't been customized yet, the game shows *"We're sorry. The item you were viewing is no longer available."* - simply equip any customization option for that slot to prevent the message from showing again (on that slot). This is cosmetic only and doesn't prevent modifications.
+- Purchasing items (e.g. totem customizations) triggers the unlock notification window twice. This happens for all purchases and is cosmetic only.
+- The tutorial does not automatically trigger on first login like it would normally. It can still be played manually from the Play menu.
 
 ## Prerequisites
 
