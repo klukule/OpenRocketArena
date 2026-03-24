@@ -2,7 +2,8 @@
 
 **Proof-of-concept** replacement backend for Rocket Arena. This project reimplements EA's backend and Rocket Arenas' Mango backend services so the game can run without the original servers.
 
-> **Warning:** This is a PoC. Things are broken, incomplete, or held together with duct tape. Use at your own risk and only if you know what you're doing. Proper implementation coming soon™
+> [!WARNING]
+> This is a PoC. Things are broken, incomplete, or held together with duct tape. Use at your own risk and only if you know what you're doing. Proper implementation coming soon™
 
 The implementation has been tested vs. bots only although online play should be possible by exposing the server to the internet and modifying necessary configs + handling portforwarding etc.
 
@@ -103,7 +104,8 @@ optional, uncomment to enable voice chat - by default game will try to use origi
 | `Domain` | Vivox domain (e.g. `mtu1xp.vivox.com`) |
 | `Issuer` | Vivox token issuer (must match `Vivox:TokenIssuer` in `appsettings.json`) |
 
-> **Note:** Vivox requires a registered Vivox/Unity account. Both the backend (`appsettings.json`) and client (`Overrides.ini`) must have matching issuer and domain values. The backend also needs the `Vivox:TokenKey` for signing tokens.
+> [!NOTE]
+> Vivox requires a registered Vivox/Unity account. Both the backend (`appsettings.json`) and client (`Overrides.ini`) must have matching issuer and domain values. The backend also needs the `Vivox:TokenKey` for signing tokens.
 
 ### Steam API Key
 
@@ -116,7 +118,8 @@ There are two types:
 
 Both work, but the publisher key has higher rate limits and access to additional endpoints.
 
-> **Do not share your API key.** It is a secret. Do not commit it to git, post it publicly, or include it in shared builds. The `customize.ps1` script writes it only to local config files.
+> [!CAUTION]
+> Do not share your API key. It is a secret. Do not commit it to git, post it publicly, or include it in shared builds. The `customize.ps1` script writes it only to local config files.
 
 ## Install
 
